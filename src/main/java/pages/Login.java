@@ -1,5 +1,6 @@
 package pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
@@ -25,7 +26,7 @@ public class Login extends _TestBase {
         $(this.email).setValue(login);
         $(this.password).setValue(password);
         Thread.sleep(200);
-        $(this.loginButton).click();
+        $(this.loginButton).shouldBe(Condition.enabled).click();
     }
 
     @Step("Pobieranie wiadomosci z bledem logowania")

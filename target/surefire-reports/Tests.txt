@@ -1,21 +1,38 @@
 -------------------------------------------------------------------------------
 Test set: Tests
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 49.981 s <<< FAILURE! - in Tests
-test003_fillPolishLanguagePromotion(Tests)  Time elapsed: 11.263 s  <<< FAILURE!
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 49.357 s <<< FAILURE! - in Tests
+test002_fillExpertsApplication(Tests)  Time elapsed: 11.266 s  <<< FAILURE!
 com.codeborne.selenide.ex.ElementNotFound: 
-Element not found {By.xpath: //button[@id='j_idt122:applicationTable:0:j_idt162']}
+Element not found {#o0section-15-control?grid-1-grid?choose_language-control??e0 + span}
 Expected: visible or transparent
-	at Tests.test003_fillPolishLanguagePromotion(Tests.java:110)
+	at Tests.test002_fillExpertsApplication(Tests.java:75)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='j_idt122:applicationTable:0:j_idt162']"}
+no such element: Unable to locate element: {"method":"css selector","selector":"#o0section-15-control?grid-1-grid?choose_language-control??e0 + span"}
   (Session info: chrome=75.0.3770.100)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MK-PC', ip: '192.168.43.190', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 97dcf05995c800d4b7546a25045d513c
-*** Element info: {Using=xpath, value=//button[@id='j_idt122:applicationTable:0:j_idt162']}
-	at Tests.test003_fillPolishLanguagePromotion(Tests.java:110)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 251d1280dafbc8dce34adb4fb6c8d047
+*** Element info: {Using=css selector, value=#o0section-15-control?grid-1-grid?choose_language-control??e0 + span}
+	at Tests.test002_fillExpertsApplication(Tests.java:75)
+
+test003_fillPolishLanguagePromotion(Tests)  Time elapsed: 11.006 s  <<< FAILURE!
+com.codeborne.selenide.ex.ElementNotFound: 
+Element not found {#o0fr-view-component?section-508-section?grid-1-grid?textarea-0-control?field??c}
+Expected: exist
+	at Tests.test003_fillPolishLanguagePromotion(Tests.java:119)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#o0fr-view-component?section-508-section?grid-1-grid?textarea-0-control?field??c"}
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MK-PC', ip: '192.168.43.190', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 251d1280dafbc8dce34adb4fb6c8d047
+*** Element info: {Using=css selector, value=#o0fr-view-component?section-508-section?grid-1-grid?textarea-0-control?field??c}
+	at Tests.test003_fillPolishLanguagePromotion(Tests.java:119)
 

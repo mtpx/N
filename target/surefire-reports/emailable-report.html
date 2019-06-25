@@ -9,16 +9,16 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">47 642</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">46 778</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests</td><td><a href="#m0">test003_fillPolishLanguagePromotion</a></td><td rowspan="1">1561397641644</td><td rowspan="1">11241</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Tests</td><td><a href="#m1">test001_logowanie</a></td><td rowspan="1">1561397605370</td><td rowspan="1">18692</td></tr><tr class="passedeven"><td><a href="#m2">test002_fillExpertsApplication</a></td><td rowspan="1">1561397624196</td><td rowspan="1">17444</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Tests</td><td><a href="#m0">test002_fillExpertsApplication</a></td><td rowspan="1">1561486609639</td><td rowspan="1">11250</td></tr><tr class="failedeven"><td><a href="#m1">test003_fillPolishLanguagePromotion</a></td><td rowspan="1">1561486620905</td><td rowspan="1">11006</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Tests</td><td><a href="#m2">test001_logowanie</a></td><td rowspan="1">1561486585241</td><td rowspan="1">24274</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">Tests#test003_fillPolishLanguagePromotion</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element not found {By.xpath: //button[@id=&apos;j_idt122:applicationTable:0:j_idt162&apos;]}
+<h2>Surefire test</h2><h3 id="m0">Tests#test002_fillExpertsApplication</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element not found {#o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0 + span}
 Expected: visible or transparent
-Screenshot: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561397651888.0.png
-Page source: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561397651888.0.html
+Screenshot: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561486620039.0.png
+Page source: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561486620039.0.html
 Timeout: 10 s.
-Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;j_idt122:applicationTable:0:j_idt162&apos;]&quot;}
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0 + span&quot;}
 	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:37)
 	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:100)
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:65)
@@ -29,17 +29,17 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
 	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
 	at com.sun.proxy.$Proxy27.click(Unknown Source)
-	at pages.HomePage.deleteExistingApplications(HomePage.java:25)
-	at Tests.test003_fillPolishLanguagePromotion(Tests.java:110)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;j_idt122:applicationTable:0:j_idt162&apos;]&quot;}
+	at pages.ExpertsApplication.clickPolishLanguageCheckbox(ExpertsApplication.java:70)
+	at Tests.test002_fillExpertsApplication(Tests.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0 + span&quot;}
   (Session info: chrome=75.0.3770.100)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;MK-PC&apos;, ip: &apos;192.168.43.190&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 97dcf05995c800d4b7546a25045d513c
-*** Element info: {Using=xpath, value=//button[@id=&apos;j_idt122:applicationTable:0:j_idt162&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 251d1280dafbc8dce34adb4fb6c8d047
+*** Element info: {Using=css selector, value=#o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0 + span}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -47,15 +47,51 @@ Session ID: 97dcf05995c800d4b7546a25045d513c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:28)
 	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:74)
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:50)
 	... 38 more
 ... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Tests#test001_logowanie</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Tests#test002_fillExpertsApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests#test003_fillPolishLanguagePromotion</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">Element not found {#o0fr-view-component≡section-508-section≡grid-1-grid≡textarea-0-control≡field≡≡c}
+Expected: exist
+Screenshot: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561486631169.1.png
+Page source: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561486631169.1.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#o0fr-view-component≡section-508-section≡grid-1-grid≡textarea-0-control≡field≡≡c&quot;}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:37)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:100)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy27.sendKeys(Unknown Source)
+	at pages.PolishLanguagePromotion.setProjectRealizationPlace(PolishLanguagePromotion.java:105)
+	at Tests.test003_fillPolishLanguagePromotion(Tests.java:119)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#o0fr-view-component≡section-508-section≡grid-1-grid≡textarea-0-control≡field≡≡c&quot;}
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MK-PC&apos;, ip: &apos;192.168.43.190&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 251d1280dafbc8dce34adb4fb6c8d047
+*** Element info: {Using=css selector, value=#o0fr-view-component≡section-508-section≡grid-1-grid≡textarea-0-control≡field≡≡c}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:28)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:74)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:102)
+	... 33 more
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests#test001_logowanie</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

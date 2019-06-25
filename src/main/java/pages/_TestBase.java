@@ -1,9 +1,12 @@
 package pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import java.util.List;
 import static com.codeborne.selenide.Selenide.*;
 import io.qameta.allure.Step;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 
 
@@ -11,8 +14,8 @@ import org.openqa.selenium.By;
 
 public class _TestBase {
 
-
-    //lokalizatory
+    private static final Logger log = LogManager.getLogger(_TestBase.class);
+    //lokalizatory //$(".btn").shouldBe(enabled).click();
 
     private SelenideElement login = $(".c-programs > a");
     private SelenideElement programs = $(".c-programs > a");
@@ -30,7 +33,11 @@ public class _TestBase {
 
 
     public void clickMyApplications() {
-        applicationsMenu.get(1).click();
+        try {
+            applicationsMenu.get(1).click();
+        }catch (Exception e){
+            applicationsMenu.get(1).click();
+        }
     }
 
     public void clickDocuments() {

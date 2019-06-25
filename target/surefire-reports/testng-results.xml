@@ -1,41 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-06-24T17:33:25Z" name="Surefire suite" finished-at="2019-06-24T17:34:12Z" duration-ms="47642">
+  <suite started-at="2019-06-25T18:16:25Z" name="Surefire suite" finished-at="2019-06-25T18:17:11Z" duration-ms="46778">
     <groups>
     </groups>
-    <test started-at="2019-06-24T17:33:25Z" name="Surefire test" finished-at="2019-06-24T17:34:12Z" duration-ms="47642">
+    <test started-at="2019-06-25T18:16:25Z" name="Surefire test" finished-at="2019-06-25T18:17:11Z" duration-ms="46778">
       <class name="Tests">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Tests@6fa0450e]" started-at="2019-06-24T17:33:25Z" name="beforeTest" finished-at="2019-06-24T17:33:25Z" duration-ms="51" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Tests@6d11ceef]" started-at="2019-06-25T18:16:25Z" name="beforeTest" finished-at="2019-06-25T18:16:25Z" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests@6fa0450e]" started-at="2019-06-24T17:33:25Z" name="setUp" finished-at="2019-06-24T17:33:25Z" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests@6d11ceef]" started-at="2019-06-25T18:16:25Z" name="setUp" finished-at="2019-06-25T18:16:25Z" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test001_logowanie()[pri:1, instance:Tests@6fa0450e]" started-at="2019-06-24T17:33:25Z" name="test001_logowanie" description="Logowanie" finished-at="2019-06-24T17:33:44Z" duration-ms="18692" status="PASS">
+        <test-method signature="test001_logowanie()[pri:1, instance:Tests@6d11ceef]" started-at="2019-06-25T18:16:25Z" name="test001_logowanie" description="Logowanie" finished-at="2019-06-25T18:16:49Z" duration-ms="24274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test001_logowanie -->
-        <test-method signature="test002_fillExpertsApplication()[pri:1, instance:Tests@6fa0450e]" started-at="2019-06-24T17:33:44Z" name="test002_fillExpertsApplication" finished-at="2019-06-24T17:34:01Z" duration-ms="17444" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test002_fillExpertsApplication -->
-        <test-method signature="test003_fillPolishLanguagePromotion()[pri:1, instance:Tests@6fa0450e]" started-at="2019-06-24T17:34:01Z" name="test003_fillPolishLanguagePromotion" finished-at="2019-06-24T17:34:12Z" duration-ms="11241" status="FAIL">
+        <test-method signature="test002_fillExpertsApplication()[pri:1, instance:Tests@6d11ceef]" started-at="2019-06-25T18:16:49Z" name="test002_fillExpertsApplication" finished-at="2019-06-25T18:17:00Z" duration-ms="11250" status="FAIL">
           <exception class="com.codeborne.selenide.ex.ElementNotFound">
             <message>
-              <![CDATA[Element not found {By.xpath: //button[@id='j_idt122:applicationTable:0:j_idt162']}
+              <![CDATA[Element not found {#o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0 + span}
 Expected: visible or transparent]]>
             </message>
             <full-stacktrace>
-              <![CDATA[Element not found {By.xpath: //button[@id='j_idt122:applicationTable:0:j_idt162']}
+              <![CDATA[Element not found {#o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0 + span}
 Expected: visible or transparent
-Screenshot: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561397651888.0.png
-Page source: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561397651888.0.html
+Screenshot: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561486620039.0.png
+Page source: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561486620039.0.html
 Timeout: 10 s.
-Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='j_idt122:applicationTable:0:j_idt162']"}
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0 + span"}
 at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:37)
 at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:100)
 at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:65)
@@ -46,8 +42,8 @@ at com.codeborne.selenide.commands.Commands.execute(Commands.java:144)
 at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
 at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
 at com.sun.proxy.$Proxy27.click(Unknown Source)
-at pages.HomePage.deleteExistingApplications(HomePage.java:25)
-at Tests.test003_fillPolishLanguagePromotion(Tests.java:110)
+at pages.ExpertsApplication.clickPolishLanguageCheckbox(ExpertsApplication.java:70)
+at Tests.test002_fillExpertsApplication(Tests.java:75)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -77,16 +73,16 @@ at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:14
 at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='j_idt122:applicationTable:0:j_idt162']"}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0 + span"}
   (Session info: chrome=75.0.3770.100)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MK-PC', ip: '192.168.43.190', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 97dcf05995c800d4b7546a25045d513c
-*** Element info: {Using=xpath, value=//button[@id='j_idt122:applicationTable:0:j_idt162']}
-at jdk.internal.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 251d1280dafbc8dce34adb4fb6c8d047
+*** Element info: {Using=css selector, value=#o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0 + span}
+at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
@@ -97,8 +93,8 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:28)
 at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:74)
@@ -109,12 +105,94 @@ at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.
           </exception> <!-- com.codeborne.selenide.ex.ElementNotFound -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- test002_fillExpertsApplication -->
+        <test-method signature="test003_fillPolishLanguagePromotion()[pri:1, instance:Tests@6d11ceef]" started-at="2019-06-25T18:17:00Z" name="test003_fillPolishLanguagePromotion" finished-at="2019-06-25T18:17:11Z" duration-ms="11006" status="FAIL">
+          <exception class="com.codeborne.selenide.ex.ElementNotFound">
+            <message>
+              <![CDATA[Element not found {#o0fr-view-component≡section-508-section≡grid-1-grid≡textarea-0-control≡field≡≡c}
+Expected: exist]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[Element not found {#o0fr-view-component≡section-508-section≡grid-1-grid≡textarea-0-control≡field≡≡c}
+Expected: exist
+Screenshot: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561486631169.1.png
+Page source: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561486631169.1.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#o0fr-view-component≡section-508-section≡grid-1-grid≡textarea-0-control≡field≡≡c"}
+at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:37)
+at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:100)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131)
+at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+at com.sun.proxy.$Proxy27.sendKeys(Unknown Source)
+at pages.PolishLanguagePromotion.setProjectRealizationPlace(PolishLanguagePromotion.java:105)
+at Tests.test003_fillPolishLanguagePromotion(Tests.java:119)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#o0fr-view-component≡section-508-section≡grid-1-grid≡textarea-0-control≡field≡≡c"}
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MK-PC', ip: '192.168.43.190', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 251d1280dafbc8dce34adb4fb6c8d047
+*** Element info: {Using=css selector, value=#o0fr-view-component≡section-508-section≡grid-1-grid≡textarea-0-control≡field≡≡c}
+at jdk.internal.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:28)
+at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:74)
+at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:102)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.codeborne.selenide.ex.ElementNotFound -->
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- test003_fillPolishLanguagePromotion -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Tests@6fa0450e]" started-at="2019-06-24T17:34:12Z" name="afterClass" finished-at="2019-06-24T17:34:12Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:Tests@6d11ceef]" started-at="2019-06-25T18:17:11Z" name="afterClass" finished-at="2019-06-25T18:17:11Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Tests@6fa0450e]" started-at="2019-06-24T17:34:12Z" name="afterTest" finished-at="2019-06-24T17:34:12Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Tests@6d11ceef]" started-at="2019-06-25T18:17:11Z" name="afterTest" finished-at="2019-06-25T18:17:11Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

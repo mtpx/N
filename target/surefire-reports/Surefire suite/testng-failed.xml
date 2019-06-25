@@ -5,6 +5,7 @@
     <classes>
       <class name="Tests">
         <methods>
+          <include name="test002_fillExpertsApplication"/>
           <include name="test003_fillPolishLanguagePromotion"/>
           <include name="afterClass"/>
           <include name="beforeTest"/>

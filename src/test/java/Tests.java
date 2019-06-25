@@ -21,7 +21,7 @@ public class Tests {
     private static final Logger log = LogManager.getLogger(Tests.class);
     @BeforeClass
     public void setUp() throws Exception {
-
+        Configuration.holdBrowserOpen = true;
         Configuration.browser = "chrome";
         Configuration.timeout = 10000;
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));

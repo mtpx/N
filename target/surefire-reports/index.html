@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
                     </span>
                     <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Tests" class="method navigator-link" hash-for-method="test002_fillExpertsApplication">test002_fillExpertsApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="Tests" class="method navigator-link" hash-for-method="test003_fillPolishLanguagePromotion">test003_fillPolishLanguagePromotion</a> <!-- method navigator-link -->
@@ -117,11 +122,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="Tests" class="method navigator-link" hash-for-method="test001_logowanie">test001_logowanie</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="Tests" class="method navigator-link" hash-for-method="test002_fillExpertsApplication">test002_fillExpertsApplication</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -144,15 +144,15 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test003_fillPolishLanguagePromotion">
-                  </a> <!-- test003_fillPolishLanguagePromotion -->
-                  <span class="method-name">test003_fillPolishLanguagePromotion</span>
-                  <div class="stack-trace">Element not found {By.xpath: //button[@id=&apos;j_idt122:applicationTable:0:j_idt162&apos;]}
+                  <a name="test002_fillExpertsApplication">
+                  </a> <!-- test002_fillExpertsApplication -->
+                  <span class="method-name">test002_fillExpertsApplication</span>
+                  <div class="stack-trace">Element not found {#o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0 + span}
 Expected: visible or transparent
-Screenshot: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561397651888.0.png
-Page source: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561397651888.0.html
+Screenshot: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561486620039.0.png
+Page source: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561486620039.0.html
 Timeout: 10 s.
-Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;j_idt122:applicationTable:0:j_idt162&apos;]&quot;}
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0 + span&quot;}
 	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:37)
 	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:100)
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:65)
@@ -163,17 +163,17 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:99)
 	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
 	at com.sun.proxy.$Proxy27.click(Unknown Source)
-	at pages.HomePage.deleteExistingApplications(HomePage.java:25)
-	at Tests.test003_fillPolishLanguagePromotion(Tests.java:110)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;j_idt122:applicationTable:0:j_idt162&apos;]&quot;}
+	at pages.ExpertsApplication.clickPolishLanguageCheckbox(ExpertsApplication.java:70)
+	at Tests.test002_fillExpertsApplication(Tests.java:75)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0 + span&quot;}
   (Session info: chrome=75.0.3770.100)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;MK-PC&apos;, ip: &apos;192.168.43.190&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;12&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:50921}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 97dcf05995c800d4b7546a25045d513c
-*** Element info: {Using=xpath, value=//button[@id=&apos;j_idt122:applicationTable:0:j_idt162&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 251d1280dafbc8dce34adb4fb6c8d047
+*** Element info: {Using=css selector, value=#o0section-15-control≡grid-1-grid≡choose_language-control≡≡e0 + span}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -181,13 +181,58 @@ Session ID: 97dcf05995c800d4b7546a25045d513c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:28)
 	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:74)
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:50)
 	... 38 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test003_fillPolishLanguagePromotion">
+                  </a> <!-- test003_fillPolishLanguagePromotion -->
+                  <span class="method-name">test003_fillPolishLanguagePromotion</span>
+                  <div class="stack-trace">Element not found {#o0fr-view-component≡section-508-section≡grid-1-grid≡textarea-0-control≡field≡≡c}
+Expected: exist
+Screenshot: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561486631169.1.png
+Page source: file:/C:/Users/mk/Desktop/N/build/reports/tests/1561486631169.1.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#o0fr-view-component≡section-508-section≡grid-1-grid≡textarea-0-control≡field≡≡c&quot;}
+	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:37)
+	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:100)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:131)
+	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:65)
+	at com.sun.proxy.$Proxy27.sendKeys(Unknown Source)
+	at pages.PolishLanguagePromotion.setProjectRealizationPlace(PolishLanguagePromotion.java:105)
+	at Tests.test003_fillPolishLanguagePromotion(Tests.java:119)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#o0fr-view-component≡section-508-section≡grid-1-grid≡textarea-0-control≡field≡≡c&quot;}
+  (Session info: chrome=75.0.3770.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;MK-PC&apos;, ip: &apos;192.168.43.190&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.100, chrome: {chromedriverVersion: 75.0.3770.90 (a6dcaf7e3ec6f..., userDataDir: C:\Users\mk\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56882}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 251d1280dafbc8dce34adb4fb6c8d047
+*** Element info: {Using=css selector, value=#o0fr-view-component≡section-508-section≡grid-1-grid≡textarea-0-control≡field≡≡c}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:28)
+	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:74)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:102)
+	... 33 more
 ... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -207,13 +252,6 @@ Session ID: 97dcf05995c800d4b7546a25045d513c
                   <span class="method-name">test001_logowanie</span>
                   <em>
 (Logowanie)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test002_fillExpertsApplication">
-                  </a> <!-- test002_fillExpertsApplication -->
-                  <span class="method-name">test002_fillExpertsApplication</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -273,20 +311,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test001_logowanie')
 data.setCell(0, 2, 'Tests')
-data.setCell(0, 3, 18692);
+data.setCell(0, 3, 24274);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test002_fillExpertsApplication')
 data.setCell(1, 2, 'Tests')
-data.setCell(1, 3, 17444);
+data.setCell(1, 3, 11250);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test003_fillPolishLanguagePromotion')
 data.setCell(2, 2, 'Tests')
-data.setCell(2, 3, 11241);
+data.setCell(2, 3, 11006);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 47 seconds</span>
+              <span class="suite-total-time">Total running time: 46 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -319,29 +357,31 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">63 ms</span>
+                <span class="method-start">62 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">test001_logowanie</span>
-                <span class="method-start">94 ms</span>
+                <span class="method-start">102 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">test002_fillExpertsApplication</span>
-                <span class="method-start">18920 ms</span>
+                <span class="method-start">24500 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">test003_fillPolishLanguagePromotion</span>
-                <span class="method-start">36368 ms</span>
+                <span class="method-start">35766 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">47629 ms</span>
+                <span class="method-start">46772 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">47634 ms</span>
+                <span class="method-start">46772 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
