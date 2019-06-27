@@ -95,7 +95,8 @@ public class PolishLanguagePromotion extends _TestBase {
     // navigation
     @Step("Nastepna strona wniosku")
     public void clickNextPageOfApplication(){
-        nextPageOfApplicationButton.click();
+
+        nextPageOfApplicationButton.shouldBe(Condition.enabled).click();
     }
 
 
