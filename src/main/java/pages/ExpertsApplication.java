@@ -162,7 +162,7 @@ public class ExpertsApplication extends _TestBase {
 
     @Step("Szkic zostal zapisany - zamkniecie boxa")
     public void clickSavingDraftTitleCloseButton() {
-        savingDraftTitleCloseButton.click();
+        savingDraftTitleCloseButton.shouldBe(Condition.enabled).click();
     }
 
     //validation functions
