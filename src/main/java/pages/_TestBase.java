@@ -34,9 +34,9 @@ public class _TestBase {
 
     public void clickMyApplications() {
         try {
-            applicationsMenu.get(1).click();
+            applicationsMenu.get(1).shouldBe(Condition.enabled).click();
         }catch (Exception e){
-            applicationsMenu.get(1).click();
+            applicationsMenu.get(1).shouldBe(Condition.enabled).click();
         }
     }
 

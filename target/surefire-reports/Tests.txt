@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Tests
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 100.945 s - in Tests
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 103.849 s - in Tests

@@ -115,7 +115,7 @@ public class Tests {
         Applications objApplications = new Applications();
         objApplications.clickFillPolishLanguagePromotion();
 
-        log.info("3. Wypełanie pierwszej strony wniosku");
+        log.info("3. Wypełanie metryki wniosku");
         PolishLanguagePromotion objPolishLanguagePromotion = new PolishLanguagePromotion();
         objPolishLanguagePromotion.setProjectRealizationPlace(faker.streetSuffix());
         objPolishLanguagePromotion.clickNextPageOfApplication();
@@ -131,9 +131,11 @@ public class Tests {
         objPolishLanguagePromotion.setFinanceContactPerson(faker.firstName(), faker.lastName(), faker.country(),"xxx@asd.pl","794350654");
         objPolishLanguagePromotion.setDescriptionOfApplicant(generateRandomString(1010));
         objPolishLanguagePromotion.setExperienceOfApplicant(generateRandomString(1010));
-        objPolishLanguagePromotion.clickNextPageOfApplication();
 
         log.info("5. Wypełanie trzeciej strony wniosku");
+        objPolishLanguagePromotion.clickNextPageOfApplication();
+
+        log.info("5. Wypełanie czwartej strony wniosku");
         objPolishLanguagePromotion.clickNextPageOfApplication();
         objPolishLanguagePromotion.setProjectTitle(generateRandomString(15));
         objPolishLanguagePromotion.setProjectStartDate("2019-10-09");
