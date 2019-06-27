@@ -17,21 +17,21 @@ public class Applications extends _TestBase {
     @Step("Wypelnij wniosek: Promocja Jezyka Polskiego")
     public void clickFillPolishLanguagePromotion() throws InterruptedException {
         fillPolishLanguagePromotion.shouldBe(enabled).click();
-        //Thread.sleep(2000);
-        //if (fillPolishLanguagePromotion.isDisplayed()){
-        //    log.info("retry fill polish click");
-        //    fillPolishLanguagePromotion.click();
-       // }
+        Thread.sleep(2000);
+        if (fillPolishLanguagePromotion.isDisplayed()){
+            log.info("retry fill polish click");
+            fillPolishLanguagePromotion.click();
+        }
     }
 
     @Step("Wypelnij wniosek: Experci")
     public void clickFillExpertsApplication() throws InterruptedException {
         fillExpertsApplication.shouldBe(enabled).click();
-        //Thread.sleep(100);
-        //if (fillExpertsApplication.isDisplayed()){
-        //    log.info("retry fill experts click");
-        //    fillExpertsApplication.click();
-        //}
+        Thread.sleep(2000);
+        if (fillExpertsApplication.isDisplayed()){
+            log.info("retry fill experts click");
+            fillExpertsApplication.click();
+        }
     }
 
 
