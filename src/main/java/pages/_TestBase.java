@@ -7,9 +7,9 @@ import static com.codeborne.selenide.Selenide.*;
 import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 
 public class _TestBase {
@@ -50,6 +50,12 @@ public class _TestBase {
 
     public void clickNotification() {
         applicationsMenu.get(4).click();
+    }
+    public void acceptAlertIfPresent() {
+        try {
+            confirm();
+        } catch (Exception e) {
+        }
     }
 
 }

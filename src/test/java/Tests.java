@@ -21,7 +21,7 @@ public class Tests {
     private static final Logger log = LogManager.getLogger(Tests.class);
     @BeforeClass
     public void setUp() throws Exception {
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
         Configuration.browser = "chrome";
         Configuration.timeout = 10000;
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
@@ -109,6 +109,7 @@ public class Tests {
         HomePage objHomePage = new HomePage();
         //objHomePage.deleteExistingApplications();
         objHomePage.clickPrograms();
+        objHomePage.acceptAlertIfPresent();
 
         log.info("2. Wypełanie wniosku promocja jezyka polskiego");
         Applications objApplications = new Applications();
