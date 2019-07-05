@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-06-27T13:09:29Z" name="Surefire suite" finished-at="2019-06-27T13:10:53Z" duration-ms="84096">
+  <suite name="Surefire suite" duration-ms="6763" started-at="2019-07-05T11:36:27Z" finished-at="2019-07-05T11:36:33Z">
     <groups>
     </groups>
-    <test started-at="2019-06-27T13:09:29Z" name="Surefire test" finished-at="2019-06-27T13:10:53Z" duration-ms="84096">
+    <test name="Surefire test" duration-ms="6763" started-at="2019-07-05T11:36:27Z" finished-at="2019-07-05T11:36:33Z">
       <class name="Tests">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Tests@37468787]" started-at="2019-06-27T13:09:29Z" name="beforeTest" finished-at="2019-06-27T13:09:29Z" duration-ms="41" status="PASS">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Tests@78b41097]" name="beforeTest" is-config="true" duration-ms="29" started-at="2019-07-05T11:36:27Z" finished-at="2019-07-05T11:36:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests@37468787]" started-at="2019-06-27T13:09:29Z" name="setUp" finished-at="2019-06-27T13:09:29Z" duration-ms="20" status="PASS">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Tests@78b41097]" name="setUp" is-config="true" duration-ms="12" started-at="2019-07-05T11:36:27Z" finished-at="2019-07-05T11:36:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test001_logowanie()[pri:1, instance:Tests@37468787]" started-at="2019-06-27T13:09:29Z" name="test001_logowanie" description="Logowanie" finished-at="2019-06-27T13:09:46Z" duration-ms="16863" status="PASS">
+        <test-method status="PASS" signature="test001_logowanie()[pri:1, instance:Tests@78b41097]" name="test001_logowanie" duration-ms="6586" started-at="2019-07-05T11:36:27Z" description="Logowanie" finished-at="2019-07-05T11:36:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test001_logowanie -->
-        <test-method signature="test002_fillExpertsApplication()[pri:1, instance:Tests@37468787]" started-at="2019-06-27T13:09:46Z" name="test002_fillExpertsApplication" finished-at="2019-06-27T13:10:05Z" duration-ms="18687" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test002_fillExpertsApplication -->
-        <test-method signature="test003_fillPolishLanguagePromotion()[pri:1, instance:Tests@37468787]" started-at="2019-06-27T13:10:05Z" name="test003_fillPolishLanguagePromotion" finished-at="2019-06-27T13:10:53Z" duration-ms="48296" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test003_fillPolishLanguagePromotion -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:Tests@37468787]" started-at="2019-06-27T13:10:53Z" name="afterClass" finished-at="2019-06-27T13:10:53Z" duration-ms="2" status="PASS">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:Tests@78b41097]" name="afterClass" is-config="true" duration-ms="1" started-at="2019-07-05T11:36:33Z" finished-at="2019-07-05T11:36:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Tests@37468787]" started-at="2019-06-27T13:10:53Z" name="afterTest" finished-at="2019-06-27T13:10:53Z" duration-ms="0" status="PASS">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests@78b41097]" name="afterTest" is-config="true" duration-ms="1" started-at="2019-07-05T11:36:33Z" finished-at="2019-07-05T11:36:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

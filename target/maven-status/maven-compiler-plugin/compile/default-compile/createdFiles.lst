@@ -1,8 +1,4 @@
-pages\PolishLanguagePromotion.class
 pages\_TestBase.class
 utils\Constants.class
-utils\Utils.class
-pages\ExpertsApplication.class
-pages\HomePage.class
-pages\Applications.class
 pages\Login.class
+utils\Utils.class
