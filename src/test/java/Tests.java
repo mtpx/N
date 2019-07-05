@@ -9,6 +9,8 @@ import pages.*;
 import utils.Constants;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import utils.Reader;
+
 
 
 import java.util.Properties;
@@ -40,6 +42,9 @@ public class Tests {
 
 
         log.info("1. Przejscie na strone logowania");
+        Reader objReader = new Reader();
+        objReader.readProperties();
+
         open(Constants.testurl);
 
 

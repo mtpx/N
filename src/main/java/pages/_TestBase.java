@@ -2,12 +2,7 @@ package pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
-import java.util.Properties;
-
 import static com.codeborne.selenide.Selenide.*;
 import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
@@ -25,32 +20,6 @@ public class _TestBase {
     private SelenideElement login = $(".c-programs > a");
     private SelenideElement programs = $(".c-programs > a");
     private List<SelenideElement> applicationsMenu = $$(By.xpath("//div[@class='grid__item -inline-flex']//a//span"));
-
-
-
-    public Properties loadPropertiesFile(String filePath) {
-
-        Properties prop = new Properties();
-
-        try (InputStream resourceAsStream = getClass().getClassLoader().getResourceAsStream(filePath)) {
-            prop.load(resourceAsStream);
-        } catch (IOException e) {
-            System.err.println("Unable to load properties file : " + filePath);
-        }
-
-        return prop;
-
-    }
-
-
-    private static String getRestUrl() throws IOException {
-        Properties prop = GenericUtils.loadProperties("environment.properties");
-        String restUri = prop.getProperty("rest.uri");
-        System.out.println("restUri = " + restUri);
-        return restUri;
-    }
-
-
 
     @Step("Przejście na stronę logowania")
     public void clickLogin() {

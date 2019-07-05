@@ -1,4 +1,5 @@
 pages\_TestBase.class
 utils\Constants.class
-pages\Login.class
 utils\Utils.class
+utils\Reader.class
+pages\Login.class

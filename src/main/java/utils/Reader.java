@@ -1,41 +1,29 @@
-/*package utils;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+package utils;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
+
 public class Reader {
 
-    public Properties readingFileUsersProperties() {
-        Properties pro = new Properties();
-        FileInputStream in = null;
-        try {
-            in = new FileInputStream("src\\test\\resources\\properties\\users.properties");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        try {
-            pro.load(in);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return pro;
+    public void readProperties() {
+
+        Reader app = new Reader();
+        Properties prop = app.loadPropertiesFile("src\\test\\resources\\properties\\environment.properties");
+        prop.forEach((k, v) -> System.out.println(k + ":" + v));
+
     }
 
-    public Properties readingFileCommentsProperties() {
-        Properties pro = new Properties();
-        FileInputStream in = null;
-        try {
-            in = new FileInputStream("src\\test\\resources\\properties\\comments.properties");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        try {
-            pro.load(in);
+    public Properties loadPropertiesFile(String filePath) {
+
+        Properties prop = new Properties();
+
+        try (InputStream resourceAsStream = getClass().getClassLoader().getResourceAsStream(filePath)) {
+            prop.load(resourceAsStream);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.err.println("Unable to load properties file : " + filePath);
         }
-        return pro;
+
+        return prop;
+
     }
 }
-
-*/
