@@ -11,6 +11,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 
+import java.util.Properties;
+
 import static com.codeborne.selenide.Selenide.open;
 import static utils.Utils.generateRandomString;
 
@@ -34,13 +36,12 @@ public class Tests {
 
     @Test(enabled = true, priority = 1, description = "Logowanie")
     @Description("Logowanie: bez danych/logowanie poprawne")
-    //@Parameters({ "name", "phone", "password", "001regFeedback", "blankValidationError" })
-    public void test001_logowanie(/*String name, String password, String password*/) throws Exception {
+    public void test001_logowanie() throws Exception {
 
 
         log.info("1. Przejscie na strone logowania");
         open(Constants.testurl);
-        //getWebDriver().manage().window().maximize();
+
 
        // new _TestBase().clickLogin();
 
